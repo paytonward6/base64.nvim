@@ -1,17 +1,18 @@
 local core = require("base64.core")
+local algo = require("base64.algo")
 
 local M = {}
 
-local function shared_entrypoint(context, mode)
-    core.base64(context.line1, context.line2, context.args, mode)
+local function shared_entrypoint(context, algorithm)
+    core.base64(context.line1, context.line2, context.args, algorithm)
 end
 
 local function decode(context)
-    shared_entrypoint(context, "decode")
+    shared_entrypoint(context, algo.decode)
 end
 
 local function encode(context)
-    shared_entrypoint(context, nil)
+    shared_entrypoint(context, algo.encode)
 end
 
 local function completion(line)
