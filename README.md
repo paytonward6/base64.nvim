@@ -2,8 +2,6 @@
 
 ## Installation
 
-> `base64` command required
-
 Call `require("base64").setup()` after installing via one of the following methods (or use your other, favorite package manager)
 
 ### lazy.nvim
