@@ -7,17 +7,17 @@ Call `require("base64").setup()` after installing via one of the following metho
 ### lazy.nvim
 
 ```lua
-{'nvim-telescope/telescope.nvim'},
+{'paytonward6/base64.nvim'},
 ```
 
 ### Packer
 ```lua
-use {'nvim-telescope/telescope.nvim'},
+use {'paytonward6/base64.nvim'},
 ```
 
 ### Plug
 ```lua
-Plug 'nvim-telescope/telescope.nvim',
+Plug 'paytonward6/base64.nvim',
 ```
 
 ## Usage
